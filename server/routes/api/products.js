@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var Product = require('../models/Product');
+var Product = require('../../models/Product');
 
 
 /* POST new product. CREAT*/

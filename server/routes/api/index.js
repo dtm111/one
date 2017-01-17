@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var Category = require('../models/Category');
-var Product = require('../models/Product');
+var Category = require('../../models/Category');
+var Product = require('../../models/Product');
 
 
 
