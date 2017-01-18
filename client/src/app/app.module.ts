@@ -7,9 +7,10 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { PostsComponent } from './posts/posts.component';
+import { ProductsComponent } from './products/products.component';
 
 import { PostsService } from './posts.service';
-import { ProductsComponent } from './products/products.component';
+import { ProductsService } from './products.service';
 
 // Define the routes
 const ROUTES = [
@@ -21,6 +22,10 @@ const ROUTES = [
   {
     path: 'posts',
     component: PostsComponent
+  },
+  {
+    path: 'products',
+    component: ProductsComponent
   }
 ];
 
@@ -37,7 +42,7 @@ const ROUTES = [
     RouterModule.forRoot(ROUTES), // Add routes to the app
     //ButtonsModule
   ],
-  providers: [PostsService],
+  providers: [PostsService,ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -40,7 +40,7 @@ router.get('/', function(req, res, next) {
     });
 });
 
-/* GET product by ID. READ*/
+/* GET category by name. READ*/
 router.get('/:name', function(req, res, next) {
 
     Product.find({
