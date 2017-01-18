@@ -1,0 +1,13 @@
+<nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
+
+  <ul class="nav nav-pills flex-column">
+    
+    <li class="nav-item" *ngFor="let post of posts; let i=index">
+      <a *ngIf="i===0" class = "nav-link active" href="#">{{post.name}}<span class="sr-only">(current)</span></a>
+      <a *ngIf="i!==0" class="nav-link"  href="#">{{ post.name }}</a>
+    </li>
+
+  </ul>
+
+</nav>
+
